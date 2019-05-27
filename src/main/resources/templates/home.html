@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html  xmlns = "http://www.w3.org/1999/xhtml"
+	xmlns:th= "http://www.tyhmeleaf.org">
+	<head>
+		<title>Erdata</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" th:href="@{/css/index.css}">
+		<link rel ="stylesheet" th:href="@{/css/starter.css}">
+		<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    	<link th:href="@{/css/bootstrap-theme.css}" rel="stylesheet">
+    	<link th:href="@{/css/bootstrap.css.map}" rel="stylesheet">
+    	<link th:href="@{/css/bootstrap.min.css.map}" rel="stylesheet">-->
+		<link rel="icon" th:href="@{/images/logo.png}">
+		
+		<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+		<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet">
+		<link th:href="@{/css/elegant-fonts.css}" rel="stylesheet">
+		<link th:href="@{/css/themify-icons.css}" rel="stylesheet">
+		<link th:href="@{/css/swiper.min.css}" rel="stylesheet">
+		<link th:href="@{/css/style.css}" rel="stylesheet">
+	</head>
+	<body>
+	<header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            MAIL: <a href="#">kaleabtaye@gmail.com</a>
+                        </div><!-- .header-bar-email -->
+
+                        <div class="header-bar-text">
+                            <p>PHONE: <span>+251926628700</span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+					<div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
+                            <form  class="form-inline my-2 my-lg-0" th:action="@{/register}" th:method="GET">
+						<button id="loginButton" class="btn" type="submit" >Register</button>
+							</form>
+					
+                        </div><!-- .donate-btn -->
+                        <div class="donate-btn">
+                        
+                        <form  class="form-inline my-2 my-lg-0" th:action="@{/login}" th:method="GET">
+						<button id="loginButton" class="btn" type="submit" >Login</button>
+					</form></div>
+                    </div><!-- .col -->
+                   
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                       
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+	
+
+
+
+  <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap">
+                <img src="images/hero.jpg" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h1>እርዳታ</h1>
+                                    <h4>ሰው ለምርዳታ ሰው መሆን በቂ ነው!</h4>
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content mt-4">
+                                    <p>ethiopia is one the poor country in the world, but have also a rich crowd. let's help our poor society.
+            helping our people make us one of the people.</p>
+                                </div><!-- .entry-content -->
+
+                              
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+
+           
+        <div class="pagination-wrap position-absolute w-100">
+            <div class="container">
+                <div class="swiper-pagination"></div>
+            </div><!-- .container -->
+        </div><!-- .pagination-wrap -->
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+        </div>
+
+        <div class="swiper-button-prev flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+        </div>
+    </div><!-- .hero-slider -->
+
+
+
+<div class="home-page-icon-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box active">
+                        <figure class="d-flex justify-content-center">
+                            <img src="images/hands-gray.png" alt="">
+                            <img src="images/hands-white.png" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Morbi interdum mollis sapien</h3>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>Morbi interdum mollis sapien
+Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcuMorbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="images/donation-gray.png" alt="">
+                            <img src="images/donation-white.png" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Morbi interdum mollis sapien</h3>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>Morbi interdum mollis sapien
+Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcuMorbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="images/charity-gray.png" alt="">
+                            <img src="images/charity-white.png" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Morbi interdum mollis sapien</h3>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>Morbi interdum mollis sapien
+Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<!-- 	<header id="header">
+				<div class="inner">
+					<form  class="form-inline my-2 my-lg-0" th:action="@{/register}" th:method="GET">
+						<button id="loginButton" class="btn" type="submit" >Register</button>
+					</form><br><br><br>
+					<form  class="form-inline my-2 my-lg-0" th:action="@{/login}" th:method="GET">
+						<button id="loginButton" class="btn" type="submit" >Login</button>
+					</form>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+			<div id="banner">
+				<h1>Welcome to Erdata</h1>
+				<p>The place Where ........</p>
+				
+		</div>
+				<div class="row" id="content">
+					<div class="col-sm-3">
+					
+								<h4>Morbi interdum mollis sapien </h4>
+							
+							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcuMorbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcuMorbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu
+
+							
+							</p>
+
+						
+					</div>
+					<div class="col-sm-3">
+						
+								<h4>Morbi interdum mollis sapien </h4>
+							
+							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcuMorbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu</p>
+					</div>
+
+					<div class="col-sm-3">
+							<h4>Morbi interdum mollis sapien </h4>
+							
+							<p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu</p>
+					</div>
+				</div> -->
+
+ <div class="home-page-welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title">Wellcome to Erdata.Com</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.</p>
+                        </div><!-- .entry-content -->
+
+                        
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
+                    <img src="images/cause-1.jpg" alt="welcome">
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+							<span>&copy; Erdata</span>
+						
+						<ul class="icons" id="footerIcons">
+							<li><a href="www.Facebook.com" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="www.Twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="www.linkedIn.com" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+							<li><a href="www.Pinterest.com" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+							<li><a href="www.Vimeo.com" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+    		
+    	<script th:href="@{/js/jquery-3.3.1.slim.min.js}" src="../js/jquery-3.3.1.slim.min.js"></script>
+   		<script th:href="@{/js/popper.min.js}" src="../js/popper.min.js"></script>
+    	<script th:href="@{/js/bootstrap.min.js}" src="../js/bootstrap.min.js"></script>
+    	<script th:href="@{/js/holder.min.js}" src="../js/holder.min.js"></script>
+    	
+    	<script th:href="@{/js/jquery.js}" src="../js/jquery.js"></script>
+    	<script th:href="@{/js/jquery.collapsible.min.js}" src="../js/jquery.collapsible.min.js"></script>
+    	<script th:href="@{/js/swiper.min.js}" src="../js/swiper.min.js"></script>
+    	<script th:href="@{/js/jquery.countdown.min.js}" src="../js/jquery.countdown.min.js"></script>
+    	<script th:href="@{/js/circle-progress.min.js}" src="../js/circle-progress.min.js"></script>
+    	<script th:href="@{/js/jquery.countTo.min.js}" src="../js/jquery.countTo.min.js"></script>
+    	<script th:href="@{/js/jquery.barfiller.js}" src="../js/jquery.barfiller.js"></script>
+    	<script th:href="@{/js/custom.js}" src="../js/custom.js"></script>
+    		
+	</body>
+</html>

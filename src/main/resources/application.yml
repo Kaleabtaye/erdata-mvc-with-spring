@@ -1,0 +1,16 @@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        exclude: threaddump, heapdump
+  endpoint:
+    health:
+      show-details: always
+          
+info:
+  contact:
+    email: erdata@gmail.com
+    phone: 0911121314
+    

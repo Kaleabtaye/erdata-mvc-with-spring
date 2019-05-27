@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <link th:href = "@{/css/login.css}" rel = "stylesheet">
+    <link th:href="@{/css/bootstrap-theme.css}" rel="stylesheet">
+    <link th:href="@{/css/bootstrap.css.map}" rel="stylesheet">
+    <link th:href="@{/css/bootstrap.min.css.map}" rel="stylesheet">
+	<link rel="icon" th:href="@{/images/logo.png}">-->
+	
+	
+		<link rel="icon" th:href="@{/images/logo.png}">
+		
+		<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+		<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet">
+		<link th:href="@{/css/elegant-fonts.css}" rel="stylesheet">
+		<link th:href="@{/css/themify-icons.css}" rel="stylesheet">
+		<link th:href="@{/css/swiper.min.css}" rel="stylesheet">
+		<link th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+
+<body>
+<header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            MAIL: <a href="#">kaleabtaye@gmail.com</a>
+                        </div><!-- .header-bar-email -->
+
+                        <div class="header-bar-text">
+                            <p>PHONE: <span>+251926628700</span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+					
+                   
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
+                        </div><!-- .site-branding -->
+ <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                    <div class="donate-btn">
+ 		
+ 		
+ 		<form  class="form-inline my-2 my-lg-0" th:action="@{/register}" th:method="GET">
+			<button class="btn btn-md btn-warning btn-block" type="submit">Register Here</button>
+		</form>	    </div><!-- .donate-btn -->
+                </div><!-- .col -->
+                       
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+<div class="contact-page-wrap">
+        <div class="container">
+            <div class="row">
+	 <div class="col-12 col-lg-7">
+	
+			<form th:action="@{/login}" th:method="POST" th:object="${user}" class="contact-form">
+			<div th:if="${#fields.hasErrors()}">
+								<span class="validationError">Incorrect fields</span>
+			</div>
+			<br/>
+			 
+			 <label for="username">User Name</label>
+			<input type="text" id="username" name="username"  th:placeholder="UserName" th:field="*{username}" class="form-control" /> 
+				<span class="validationError" 
+                           			th:if="${#fields.hasErrors('username')}"
+									th:errors="*{username}">userName
+								</span>
+			
+				<label for="password">Password</label> 
+				<input type="password" th:placeholder="Password" id="password" name="password" th:field="*{password}" class="form-control" />
+				<span class="validationError" 
+                           			th:if="${#fields.hasErrors('password')}"
+									th:errors="*{password}">Passcode
+				</span>
+			
+			<div class="text-danger"  th:if="${param.error}">
+				<p>Username or Password invalid, please verify</p>
+			</div>
+			<span>
+			<input id="loginButton" class="btn gradient-bg" name="submit" value="Login" type="submit" ></input>
+			</span>
+		</form>
+</div></div></div>
+	</div>
+	<footer>
+			<hr />
+		&copy; 2019  Erdata
+		</footer>
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script th:href="@{/js/jquery-3.3.1.slim.min.js}" src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script th:href="@{/js/popper.min.js}" src="../js/popper.min.js"></script>
+    <script th:href="@{/js/bootstrap.min.js}" src="../js/bootstrap.min.js"></script>
+    <script th:href="@{/js/holder.min.js}" src="../js/holder.min.js"></script>
+    
+    
+    	<script th:href="@{/js/jquery.js}" src="../js/holder.min.js"></script>
+    	<script th:href="@{/js/jquery.collapsible.min.js}" src="../js/holder.min.js"></script>
+    	<script th:href="@{/js/swiper.min.js}" src="../js/holder.min.js"></script>
+    	<script th:href="@{/js/jquery.countdown.min.js}" src="../js/holder.min.js"></script>
+    	<script th:href="@{/js/circle-progress.min.js}" src="../js/holder.min.js"></script>
+    	<script th:href="@{/js/jquery.countTo.min.js}" src="../js/holder.min.js"></script>
+    	<script th:href="@{/js/jquery.barfiller.js}" src="../js/holder.min.js"></script>
+    	<script th:href="@{/js/custom.js}" src="../js/holder.min.js"></script>
+</body>
+</html>

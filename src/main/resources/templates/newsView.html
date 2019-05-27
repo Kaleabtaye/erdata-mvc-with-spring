@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html  xmlns = "http://www.w3.org/1999/xhtml"
+	xmlns:th= "http://www.tyhmeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!--  <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+	<link th:href="@{/css/round-about.css}" rel="stylesheet">
+	
+
+    <title>News</title>
+
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <link href="css/round-about.css" rel="stylesheet">-->
+ <link rel="icon" th:href="@{/images/logo.png}">
+		
+		<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+		<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet">
+		<link th:href="@{/css/elegant-fonts.css}" rel="stylesheet">
+		<link th:href="@{/css/themify-icons.css}" rel="stylesheet">
+		<link th:href="@{/css/swiper.min.css}" rel="stylesheet">
+		<link th:href="@{/css/style.css}" rel="stylesheet">
+  </head>
+
+  <body>
+
+<header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            MAIL: <a href="#">kaleabtaye@gmail.com</a>
+                        </div><!-- .header-bar-email -->
+
+                        <div class="header-bar-text">
+                            <p>PHONE: <span>+251926628700</span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+					<div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
+                          
+					<form  class="form-inline my-2 my-lg-0" method="POST" th:action="@{/logout}">
+					<input type="submit" class="btn" value="Logout"/>
+				</form>
+                        </div><!-- .donate-btn -->
+                       
+                    </div><!-- .col -->
+                   
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
+
+        <div class="nav-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                      
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+            <li class="current-menu-item">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li>
+              <a  th:href="@{/newsView}">News</a>
+            </li>
+            <li >
+              <a   th:href="@{/job}">Job Ads</a>
+            </li>
+            <li >
+              <a   th:href="@{/freeAid}">Free Aid</a>
+            </li>
+            <li >
+              <a  th:href="@{/comment}">Comment</a>
+            </li>
+             <li   sec:authorize ="hasAuthority('RECIEVER')">
+            	<a  th:href = "@{/profile}">Profile</a>
+            <li>
+            <li>
+            	
+            </li>
+          </ul>
+                    </nav><!-- .site-navigation -->
+
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+
+
+    <!-- Navigation -->
+   <!--  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" th:href="@{/index}">Erdata</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" th:href="@{/news}">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  th:href="@{/job}">Job Ads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  th:href="@{/freeAid}">Free Aid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  th:href="@{/comment}">Comment</a>
+            </li>
+             <li class ="nav-item"  sec:authorize ="hasAuthority('RECIEVER')">
+            	<a class = "nav-link" th:href = "@{/profile}">Profile</a>
+            <li>
+            <li>
+            	<form method="POST" th:action="@{/logout}">
+					<input type="submit" value="Logout"/>
+				</form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>-->
+    	<div class="featured-cause">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2 class="entry-title">News </h2>
+                    </div><!-- .section-heading -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+            <div class="row">
+
+                <div class="col-12 col-lg-6">
+                    <div class="cause-wrap d-flex flex-wrap justify-content-between">
+                        
+
+                        <div class="cause-content-wrap">
+                              
+    <div th:each="news : ${newsView}">
+	     		<p th:text="${news.title}"></p><hr/>
+	     		<p th:text = "${news.content}"></p>
+	 </div>
+                        </div><!-- .cause-content-wrap -->
+<form   th:action="@{/news}" th:method="GET">
+			<input id="loginButton" class="btn gradient-bg" type="submit" value="Post News"/>
+		</form>
+                       
+                    </div><!-- .cause-wrap -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div>
+ 	
+
+    <!--  <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Our Causes</h1>
+                </div><!-- .col
+            </div><!-- .row
+        </div><!-- .container 
+    </div><!-- .page-header 
+  
+    
+    
+	<div class="container">
+		<div class="row">
+	    		<div class="col">
+	      			<h3>News</h3>
+	     			<div th:each="news : ${newsView}">
+	     				<p th:text="${news.title}"></p>
+	     				<p th:text = "${news.content}"></p>
+	      			</div>
+				</div>
+		</div>
+		<form  	 th:action="@{/news}" th:method="GET">
+			<input id="loginButton" class="btn gradient-bg" type="submit" >Post News</button>
+		</form>
+	</div>
+	-->
+    		<script th:href="@{/js/jquery.js}" src="../js/jquery.js"></script>
+    	<script th:href="@{/js/jquery.collapsible.min.js}" src="../js/jquery.collapsible.min.js"></script>
+    	<script th:href="@{/js/swiper.min.js}" src="../js/swiper.min.js"></script>
+    	<script th:href="@{/js/jquery.countdown.min.js}" src="../js/jquery.countdown.min.js"></script>
+    	<script th:href="@{/js/circle-progress.min.js}" src="../js/circle-progress.min.js"></script>
+    	<script th:href="@{/js/jquery.countTo.min.js}" src="../js/jquery.countTo.min.js"></script>
+    	<script th:href="@{/js/jquery.barfiller.js}" src="../js/jquery.barfiller.js"></script>
+    	<script th:href="@{/js/custom.js}" src="../js/custom.js"></script>
+</body>
+</html>
